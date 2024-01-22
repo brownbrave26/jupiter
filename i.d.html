@@ -1,0 +1,14 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+
+    viewDetailsButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const project = this.getAttribute('data-project');
+
+            // For demonstration purposes, you can alert the project name
+            alert(`View details for project: ${project}`);
+            
+            // You can add more sophisticated logic here, such as opening a modal with project details.
+        });
+    });
+});
